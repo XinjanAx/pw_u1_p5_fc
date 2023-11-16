@@ -1,0 +1,41 @@
+*{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.menu li{
+    list-style: none;
+    display: inline-block;
+    color: black;
+    background-color: #FCEE0A;
+    font: bold 14px verdana;
+    border-radius: 10px;
+    border: solid;
+    padding: 10px 12px;
+}
+ .menu li:hover{
+    color: #FCEE0A;
+    background-color: black;
+ }
+
+ .head{
+    text-align: center;
+ }
+
+ .menu{
+    padding-left: 0px;
+    background-color: black;
+    text-align: center;
+ }
+
+ h1{
+    font-size: 30px;
+    font-weight: bold;
+    font-family:fantasy;
+ }
+ .agrupar{
+    border: 1px solid black;
+     background-color: white;
+     width: 900px;
+     margin: 15px;
+ }

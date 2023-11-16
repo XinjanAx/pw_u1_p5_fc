@@ -1,0 +1,22 @@
+*{
+    text-align: center;
+}
+h4{
+    color: red;
+}
+#titulo{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 7vmin;
+}
+.amarillo{
+    color: yellow;
+}
+img[src*="jpg"]{
+    height: 100px;
+}
+img[src]{
+    height: 200px;
+}
+img[src*="fondo"]:hover{
+    height: 500px;
+}
