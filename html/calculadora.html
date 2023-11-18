@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <style>
+        section{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mi Calculadora</h1>
+    </header>
+    <nav></nav>
+    <section>
+        <div>
+            <label for="num_a">Numero a:</label>
+            <input id="num_a" type="number">
+            <label for="num_b">Numero b:</label>
+            <input id="num_b" type="number">
+
+            <button onclick="document.getElementById('num_a').style.color ='blue'" >Cambiar estilo 1</button>
+            <button onclick="document.getElementById('num_b').style.background ='red'" >Cambiar estilo 2</button>
+            <button  onclick="document.getElementById('resultado').innerHTML='1+6'">Resultado</button>
+            <label id="resultado" for="">=</label>
+        </div>
+        <div>
+            <div>
+                <img id="img_swap" style="height: 300px;" src="../img/img1.jpg" alt="chiva2">
+            </div>
+            <button onclick="document.getElementById('img_swap').src='../img/milos.png'">Cambiar imagen</button>
+            <button onclick="document.getElementById('img_swap').src='../img/img1.jpg'">Regresar imagen</button>
+
+        </div>
+        
+        <button  onclick="document.getElementById('id_div').innerHTML='<button>Hola</button>'">Crear Boton</button>
+        <div id="id_div" style="background-color: gray;">
+            <!--<button>Hola</button>-->
+        </div>
+
+    </section>
+    <footer>Todos los derechos reservados</footer>
+    
+</body>
+</html>
