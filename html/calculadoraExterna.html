@@ -3,33 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora</title>
-    <style>
-        section{
-            text-align: center;
-        }
-    </style>
-    <script>
-        function sumarNumeros(a,b){
-            var n1 = parseInt(a);
-            var n2 = parseInt(b);
-
-            console.log('Funcion sumar '+ a +' '+ b);
-            var ret =n2+n1;
-            document.getElementById('jsSumaRet').innerText=ret;
-            return ret;
-        }
-        function sumarNumerosCompleto(){
-            var n1 = parseInt(document.getElementById('num_a').value);
-            var n2 = parseInt(document.getElementById('num_a').value);
-
-            console.log('Funcion sumar '+ n1 +' '+ n2);
-            var ret =n2+n1;
-            document.getElementById('jsSumaRet2').innerText=ret;
-            return ret;
-        }
-
-    </script>
+    <title>Calculadora Externo</title>
+    <link rel="stylesheet" href="../css/externo.css">
+    <script src="../js/calculadoraLambda.js"></script>
 </head>
 <body>
     <header>
@@ -58,18 +34,26 @@
 
         </div>
         
-        <button  onclick="document.getElementById('id_div').innerHTML='<button>Hola</button>'">Crear Boton</button>
+        <button  onclick="document.getElementById('id_div').innerHTML='<label>Hola Perrin, no te olvides de parpadear</label>'">Crear TXT</button>
         <div id="id_div" style="background-color: gray;">
             <!--<button>Hola</button>-->
         </div>
+        <h2>JS Externo</h2>
         <div>
-            <h2>JS interno</h2>
-            <button onclick="sumarNumeros(document.getElementById('num_a').value,document.getElementById('num_b')).value" >Sumar incompleto</button>
-            <label id="jsSumaRet" for=""></label>
+            <button onclick="sumarNumerosCompleto()" >Sumar</button>
+            <label id="jsRet+" for=""></label>
         </div>
         <div>
-            <button onclick="sumarNumerosCompleto()" >Sumar completo</button>
-            <label id="jsSumaRet2" for=""></label>
+            <button onclick="restarNumerosCompleto()">Restar</button>
+            <label id="jsRet-" for=""></label>
+        </div>
+        <div>
+            <button onclick="mutiplicarNumerosCompleto()">Multiplicar</button>
+            <label id="jsRet*" for=""></label>
+        </div>
+        <div>
+            <button onclick="dividirNumerosCompleto()">Dividir</button>
+            <label id="jsRet/" for=""></label>
         </div>
 
     </section>

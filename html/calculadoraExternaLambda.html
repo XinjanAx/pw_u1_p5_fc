@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Externo</title>
+    <link rel="stylesheet" href="../css/externo.css">
+    <script src="../js/calculadoraLambda.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Mi Calculadora</h1>
+
+    </header>
+    <nav></nav>
+    <section>
+        <div>
+            <label for="num_a">Numero a:</label>
+            <input id="num_a" type="number">
+            <label for="num_b">Numero b:</label>
+            <input id="num_b" type="number">
+            <div>
+                <button onclick="document.getElementById('num_a').style.color ='blue'" >Cambiar estilo 1</button>
+                <button onclick="document.getElementById('num_b').style.background ='red'" >Cambiar estilo 2</button>
+            </div>   
+        </div>  
+
+        <h2>JS Externo Lambda</h2>
+        <div>
+            <button onclick="sumarCompletoLambda()" >Sumar</button>
+            <label id="jsRet+" for=""></label>
+        </div>
+        <div>
+            <button onclick="restarCompletoLambda()">Restar</button>
+            <label id="jsRet-" for=""></label>
+        </div>
+        <div>
+            <button onclick="multiplicarCompletoLambda()">Multiplicar</button>
+            <label id="jsRet*" for=""></label>
+        </div>
+        <div>
+            <button onclick="dividirCompletoLambda()">Dividir</button>
+            <label id="jsRet/" for=""></label>
+        </div>
+
+
+        <div>
+            <div>
+                <img id="img_swap" style="height: 200px;" src="https://i.blogs.es/b7227a/imagen-de-cyberpunk-edgerunners-studio-trigger/1200_800.webp" alt="chiva2">
+            </div>
+            <button onclick="cambiarImg1 ()">Cambiar imagen Ricardo M</button>
+            <button onclick="cambiarImg2 ()">Cambiar imagen Chivalry2</button>
+
+        </div>
+        
+        <button  onclick="document.getElementById('id_div').innerHTML='<label>Hola Perrin, no te olvides de parpadear</label>'">Crear TXT</button>
+        <div id="id_div" style="background-color: gray;">
+            <!--<button>Hola</button>-->
+        </div>
+
+        <h2>Conceptos JS</h2>
+        <button onclick="conceptosJS()">Test Conceptos JS</button>
+        <div id="conceptosJS" style="background-color: gray;">
+        </div>
+
+    </section>
+    <footer>Todos los derechos reservados</footer>
+    
+</body>
+</html>
