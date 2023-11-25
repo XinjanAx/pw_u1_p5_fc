@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deber 01 - Calculadora</title>
+    <script src="../js/deber1calculadora.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Calculadora</h1>
+    </header>
+    <nav></nav>
+    <section>
+        <div>
+            
+        </div>
+        <div class="div_num">
+            <button id="1" class="numero"onclick="concatenar(1)">1</button>
+            <button id="2" class="numero"onclick="concatenar(2)">2</button>
+            <button id="3" class="numero"onclick="concatenar(3)">3</button>
+            <button id="4" class="numero"onclick="concatenar(4)">4</button>
+            <button id="5" class="numero"onclick="concatenar(5)">5</button>
+            <button id="6" class="numero"onclick="concatenar(6)">6</button>
+            <button id="7" class="numero"onclick="concatenar(7)">7</button>
+            <button id="8" class="numero"onclick="concatenar(8)">8</button>
+            <button id="9" class="numero"onclick="concatenar(9)">9</button>
+            <button id="0" class="numero"onclick="concatenar(0)">0</button>
+            
+            
+        </div>
+        
+        <div id="div_op">
+            <button id="btn_suma" class="operador" onclick="operacion('+')">+</button>
+            <button id="btn_resta" class="operador" onclick="operacion('-')">-</button>
+            <button id="btn_multi" class="operador" onclick="operacion('*')">*</button>
+            <button id="btn_div" class="operador" onclick="operacion('/')">/</button>
+        </div>
+        <button id="btn_calculo" class="controles" onclick="calcular()">Calcular</button>
+        <div id="div_pantalla">
+            <label id="a" for=""></label>
+            <label id="op" for=""></label>
+            <label id="b" for=""></label>
+            <label id="pantalla" for=""></label>
+        </div>
+        <button id="btn_reset" class="controles" onclick="resetear()">Reset</button>
+    </section>
+    <footer>Todos los derechos reservados</footer>
+    
+</body>
+</html>

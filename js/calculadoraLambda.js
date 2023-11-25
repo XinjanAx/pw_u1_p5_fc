@@ -1,15 +1,15 @@
 const sumar = (ni,n2) => n1+n2;
 
 const sumarCompletoLambda = () => {
-    var ret =parser('num_a')+parser('num_b');;
+    var ret =parser('num_a')+parser('num_b');
     document.getElementById('jsRet+').innerText=ret;
 }
 const restarCompletoLambda = () => {
-    var ret =parser('num_a')-parser('num_b');;
+    var ret =parser('num_a')-parser('num_b');
     document.getElementById('jsRet-').innerText=ret;
 }
 const multiplicarCompletoLambda = () => {
-    var ret =parser('num_a')*parser('num_b');;
+    var ret =parser('num_a')*parser('num_b');
     document.getElementById('jsRet*').innerText=ret;
 }
 const dividirCompletoLambda = () => {
