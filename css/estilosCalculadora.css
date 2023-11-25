@@ -1,0 +1,36 @@
+*{
+    font-family: 'Courier New', Courier, monospace;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.calculadora{
+    display: grid;
+    background: rgb(197, 197, 197);
+    border-radius: 7px;
+    box-shadow: 20px 20px 20px rgba(140, 0, 255, 0.329);
+}
+#div_num{
+    padding: 15px;
+    display: grid;
+    grid-template-columns: repeat(3,75px);
+}
+#btn_0{
+    grid-column: span 3;
+}
+#div_op{
+    padding: 15px;
+    display: grid;
+    grid-template-columns: repeat(3,75px);
+}
+#div_pantalla{
+    padding: 15px;
+}
+h1{
+    text-align: center;
+}
+.numero:hover{
+    background-color: rgb(168, 168, 168);
+}

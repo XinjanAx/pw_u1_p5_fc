@@ -43,5 +43,6 @@ function resetear(){
     a='';
     b='';
     oper='';
+    ret='numeros?';
     siguiente = false;
 }
