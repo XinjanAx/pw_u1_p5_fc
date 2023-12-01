@@ -1,0 +1,38 @@
+*{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.div_calculadora{
+    background-color: hsl(166, 100%, 28%);
+    padding: 15px;
+    border-radius: 32px;
+    box-shadow: 20px 20px 20px rgb(0, 0, 0);
+}
+.div_botones{
+    display: grid;
+    border-radius: 7px;
+    grid-template-columns: repeat(4,75px);
+    grid-template-rows: 100px repeat(5,75px);
+    
+}
+button{
+    border-radius: 20px;
+    margin: 5px;
+    padding: 0;
+    
+    box-shadow: 5px 5px 10px -3px rgba(0, 0, 0, 0.421);
+}
+.display{
+    grid-column:  span 4;
+    padding: 15px;
+    margin: 10px 20px;
+    background-color: #36363650;
+    border-radius: 20px;
+    text-align: right;
+    box-shadow: 5px 5px 20px black;
+    
+}
