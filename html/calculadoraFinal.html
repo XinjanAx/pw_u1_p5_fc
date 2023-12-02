@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/estilosCalcuFinal.css">
-    
+    <script src="../js/calculadorafinal.js"></script>
     <title>Calculadora</title>
 </head>
 <body>
@@ -16,27 +16,41 @@
                 
                 <div class="div_botones">
                     <div class="display">
-                        Resultado
+                        <label id="a" >Hola =)</label>
+                        <label id="op"></label>
+                        <label id="b" ></label>
+                        <div>
+                            <label id="pantalla"></label>
+                        </div>
                     </div>
-                    <button>C</button>
-                    <button>&#8592</button>
-                    <button>%</button>
-                    <button>/</button>
-                    <button>7</button>
-                    <button>8</button>
-                    <button>9</button>
-                    <button>X</button>
-                    <button>4</button>
-                    <button>5</button>
-                    <button>6</button>
-                    <button>_</button>
-                    <button>1</button>
-                    <button>2</button>
-                    <button>3</button>
-                    <button>+</button>
-                    <button>0</button>
-                    <button>.</button> 
-                    <button>=</button> 
+                    <button class="btn_doble" onclick="resetear()">C</button>
+
+                    <button onclick="borrar()">&#8592</button>
+
+                    <button onclick="operacion('/')">/</button>
+
+                    <button onclick="concatenar(7)">7</button>
+                    <button onclick="concatenar(8)">8</button>
+                    <button onclick="concatenar(9)">9</button>
+
+                    <button onclick="operacion('x')">X</button>
+
+                    <button onclick="concatenar(4)">4</button>
+                    <button onclick="concatenar(5)">5</button>
+                    <button onclick="concatenar(6)">6</button>
+
+                    <button onclick="operacion('-')">_</button>
+
+                    <button onclick="concatenar(1)">1</button>
+                    <button onclick="concatenar(2)">2</button>
+                    <button onclick="concatenar(3)">3</button>
+
+                    <button onclick="operacion('+')">+</button>
+
+                    <button class="btn_doble" onclick="concatenar(0)">0</button>
+                    <button onclick="concatenar('.')">.</button> 
+
+                    <button onclick="calcular()">=</button>
                 </div>
             </div>
         </section>

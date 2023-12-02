@@ -1,6 +1,9 @@
 *{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
+body{
+    background-color: rgba(116, 116, 116, 0.462);
+}
 .container{
     display: flex;
     justify-content: center;
@@ -10,7 +13,7 @@
     background-color: hsl(166, 100%, 28%);
     padding: 15px;
     border-radius: 32px;
-    box-shadow: 20px 20px 20px rgb(0, 0, 0);
+    box-shadow: 20px 20px 20px rgba(140, 0, 255, 0.329);
 }
 .div_botones{
     display: grid;
@@ -23,16 +26,23 @@ button{
     border-radius: 20px;
     margin: 5px;
     padding: 0;
-    
+    font-size: 20px;
     box-shadow: 5px 5px 10px -3px rgba(0, 0, 0, 0.421);
+}
+.btn_doble{
+    grid-column:  span 2;
+}
+button:active{
+    background-color:hsl(166, 100%, 15%);
+    color: #AE81D3;
 }
 .display{
     grid-column:  span 4;
     padding: 15px;
     margin: 10px 20px;
-    background-color: #36363650;
+    border-color: rgb(40, 169, 0);
+    background-color: rgb(60, 255, 0);
     border-radius: 20px;
     text-align: right;
-    box-shadow: 5px 5px 20px black;
-    
+    box-shadow: 0px 0px 0px 7px rgba(0, 0, 0, 0.337); 
 }
