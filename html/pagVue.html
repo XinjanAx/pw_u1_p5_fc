@@ -14,11 +14,17 @@
     <section>
         <h6>{{3-2}}</h6>
         <div id="myApp">
+            <!-- -->
             <h1>Hola mundo</h1>
-            <p>Desde App.js</p>
             <h6>{{3-2}}</h6>
             <p>{{[1,2,3,4,5,6,7]}}</p>
             <p>{{true?'verdad':'falso'}}</p>
+            
+            
+            <p>{{mensaje}}</p>
+            <p>{{valor}}</p>
+            <button v-on:click="cambiarMensaje()">Cambiar mensaje</button>
+            <button v-on:click="sumar()">Sumar</button>
         </div>
         
 
