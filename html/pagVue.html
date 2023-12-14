@@ -23,8 +23,20 @@
             
             <p>{{mensaje}}</p>
             <p>{{valor}}</p>
-            <button v-on:click="cambiarMensaje()">Cambiar mensaje</button>
-            <button v-on:click="sumar()">Sumar</button>
+            <button v-on:click="cambiarMensaje">Cambiar mensaje</button>
+            <button v-on:click="sumar">Sumar</button>
+            <hr/>
+            <p>{{lista}}</p>
+            <label for="id_nmbr">Nombre:</label>
+            <input id="id_nmbr"  type="text" v-model="nombre">
+            <label for="id_edad">Edad:</label>
+            <input id="id_edad" v-on:keypress="pesionandotecla" type="number" v-model="edad">
+            <button v-on:click='agregar'>Agregar</button>
+            {{nombre}}
+            {{edad}}
+            <ul>
+                <li v-for="({nombre,edad},index) in lista">{{index +1}}: {{nombre}} - {{edad}}</li>
+            </ul>
         </div>
         
 
