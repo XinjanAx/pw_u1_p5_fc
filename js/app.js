@@ -5,7 +5,7 @@ const estudiantes=[
     {nombre:'b',edad:24},
     {nombre:'c',edad:30},
     {nombre:'d',edad:32},
-    {nombre:'e',edad:20},
+    {nombre:'',edad:20},
 ]
 console.log(estudiantes);
 console.table(estudiantes);
@@ -26,8 +26,8 @@ const app=Vue.createApp({
             mensaje:'hola mundo desde Vue.js',
             valor:100,
             lista:estudiantes,
-            nombre:null,
-            edad:null
+            nombre:undefined,
+            edad:null,
         }
     },
     methods:{
@@ -41,6 +41,9 @@ const app=Vue.createApp({
         },
         agregar(){
             this.lista.push({nombre:this.nombre, edad:this.edad})
+            if(this.nombre===undefined||this.edad!==null){
+                
+            }
         },
         pesionandotecla(event){
             console.log('click');
@@ -48,6 +51,15 @@ const app=Vue.createApp({
             if(event.charCode===13){
                 this.agregar();
             }
+        },
+        pesionandoteclaMod(){
+            console.log('click---------2');
+            console.log(this.nombre);
+            this.agregar();
+        },
+        borrar(){
+            console.log('borrando...');
+            this.esta=false;
         }
     },
     watch:{}

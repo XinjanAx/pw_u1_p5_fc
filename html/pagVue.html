@@ -23,19 +23,22 @@
             
             <p>{{mensaje}}</p>
             <p>{{valor}}</p>
-            <button v-on:click="cambiarMensaje">Cambiar mensaje</button>
-            <button v-on:click="sumar">Sumar</button>
+            <button @click="cambiarMensaje">Cambiar mensaje</button>
+            <button @click="sumar">Sumar</button>
             <hr/>
             <p>{{lista}}</p>
             <label for="id_nmbr">Nombre:</label>
             <input id="id_nmbr"  type="text" v-model="nombre">
             <label for="id_edad">Edad:</label>
-            <input id="id_edad" v-on:keypress="pesionandotecla" type="number" v-model="edad">
-            <button v-on:click='agregar'>Agregar</button>
+            <input id="id_edad" @keypress.enter="pesionandoteclaMod" type="number" v-model="edad">
+            <button @click='agregar'>Agregar</button>
             {{nombre}}
             {{edad}}
             <ul>
-                <li v-for="({nombre,edad},index) in lista">{{index +1}}: {{nombre}} - {{edad}}</li>
+                <li v-for="({nombre,edad},index) in lista"> 
+                    <p v-if="nombre!==undefined">{{index +1}}: {{nombre}} - {{edad}}</p>
+                    <button v-if="nombre!==undefined" @click='borrar'>borrar</button>
+                </li>
             </ul>
         </div>
         
