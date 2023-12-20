@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Vue</title>
+    <link rel="stylesheet" href="../css/formularioVue.css">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+<body>
+    <div class="contenedor">
+        <header><h1>Estudiante &#128128</h1></header>
+        <nav></nav>
+        <section>
+            <form class="form" action="https://miapli.com/procesarEstudiante" method="post">
+                <h2>Nuevo estiduante</h2>
+                <p type="CI:"><input type="text" v-model="ci"></p>
+                <p type="Nombre:"><input type="text" v-model="nombre"></p>
+                <p type="Apellido:"><input type="text" v-model="apellido"></p>
+                <p type="Ciudad:"><input type="text" v-model="ciudad"></p>
+                <p type="Email:"><input type="email" v-model="email"></p>
+                <div id="div_btn">
+                    <button type="button" @click='agregar' class="btn">Guardar</button>
+                </div>
+            </form>
+            <div id="div_tabla" class="form" v-show="lista.length > 1">
+                <h2>Estudiantes</h2>
+                <ul>
+                    <li v-for="({nombre,apellido},index) in lista"> 
+                        <p>1: Juanito - Perez</p>
+                    </li>
+                    <li  v-for="({nombre,apellido},index) in lista"><p>2: Armando - Paredes</p></li>
+                </ul>
+                
+            </div>
+        </section>
+        <footer></footer>
+
+    </div>
+   
+</body>
+</html>
+<script src="../js/formularioVue.js"></script>
